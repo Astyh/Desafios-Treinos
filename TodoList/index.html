@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Listas de Tarefas</h1>
+    </header>
+
+
+    <main>
+
+        <div class="listas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atividade</th>
+                        <th>Data</th>
+                        <th>Horario</th>
+                        <!-- <th>Remover</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pescar</td>
+                        <td>17-05-2020</td>
+                        <td>9:00 </td>
+                        <!-- <td><a href="#">X</a></td> -->
+                    </tr>
+                    <tr>
+                        <td>Nadar</td>
+                        <td>17-09-2020</td>
+                        <td>16:00</td>
+                        <!-- <td><a href="#">X</a></td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <nav>
+            <Button class="add">Adicionar</Button>
+            <Button class="remove">Remover</Button>
+        </nav>
+
+        <div class="insere">
+            <div class="atividade">
+                <label>Atividade</label>
+                <input type="text" class="atividade" placeholder="Insira a Atividade">
+            </div>
+            <div class="data">
+                <label>Data</label>
+                <input type="text" class="data" placeholder="Insira a data">
+            </div>
+            <div class="hora">
+                <label>Hora</label>
+                <input type="text" class="hora" placeholder="Insira a hora">
+            </div>
+        </div>
+
+        <div class="msgErro">
+            <h1></h1>
+        </div>
+        
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
